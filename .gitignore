@@ -6,6 +6,7 @@
 /scripts/azurekey.txt
 /lang
 /.pnp
+/.idea
 .pnp.js
 
 # testing
