@@ -3,6 +3,7 @@
 # dependencies
 /node_modules
 /scripts/node_modules
+/scripts/azurekey.txt
 /lang
 /.pnp
 .pnp.js
