@@ -1,4 +1,4 @@
-# Example with react-int, automatic tranlations wih Microsoft Azure 
+# Internationalization Example with 'react-int' with automatic tranlations using Microsoft Azure Translator 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -6,22 +6,28 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-## Install
-### `npm install`
+### Install
+`npm install`
 
-## Initialize the internationalization script
-### `npm run int:init`
+### Initialize the internationalization script
+`npm run int:init`
 
-## Parse source code for used of internationalization code to extract
-### `npm run int:extract`
+### Parse source your react app source code for uses of internationalization code to extract
+`npm run int:extract`
 
-## Translate the extracted soruce-code using Microsoft Azure Translator service
-### `npm run int:extract`
+This will look for anny occurance of the react-int api in your code declaring a new translation and it will put all the definitions found in the ./lang folder. All definitions are in english so the file will be called en.json.   This files is the input for npm run int:translate
 
-To use this part you need to go to Microsoft Azure portal, register and create translation resource. Then enter your key in the 
+### Automatically Translates the extracted source Microsoft Azure Translator service
+`npm run int:translate`
 
-## Run&Test&Build the application
-### `npm start`
+To use this part you will need to go to Microsoft Azure portal [https://portal.azure.com/](https://portal.azure.com/), 
+register and create a translation resource. Once created copy your key for the service to the the azurekey.txt file.
+
+This will translate en.json in to any language you want.  To add a new language simply create a new empty xx.json file in ./src/translations, for instance add 'it.json'.
+After running int:translate  the it.json will be overwritten with the italizan translation for the original english source
+
+### React Application
+`npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -29,12 +35,12 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### `npm test`
+`npm test`
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+`npm run build`
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
@@ -55,31 +61,6 @@ Instead, it will copy all the configuration files and the transitive dependencie
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
 ## Learn More
-
+This file was created with create-react-app.
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
