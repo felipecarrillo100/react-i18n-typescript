@@ -1,5 +1,5 @@
 {
-  "name": "react-i18n-javascript",
+  "name": "react-i18n-typescript",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -40,10 +40,7 @@
     ]
   },
   "devDependencies": {
-    "@babel/cli": "^7.12.16",
-    "@babel/core": "^7.12.16",
     "@formatjs/cli": "^3.1.0",
-    "babel-plugin-react-intl": "^8.2.25",
-    "cross-env": "^7.0.3"
+    "@types/react-dom": "^17.0.1"
   }
 }
