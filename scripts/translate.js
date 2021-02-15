@@ -10,8 +10,15 @@ const localesFolder = "../src/translations/";
 
 // Make sure you copy the subscription key from the translation resource on Azure
 let subscriptionKeyFile = "./azurekey.txt";
-let subscriptionKeyBuffer = fs.readFileSync(subscriptionKeyFile);
+let subscriptionKeyBuffer;
+try {
+    subscriptionKeyBuffer = fs.readFileSync(subscriptionKeyFile);
+} catch (err) {
+    console.log("Microsoft Azure key file not found.  Create ./scripts/azurekey.txt and put your key inside");
+    process.exit()
+}
 let subscriptionKey = "";
+
 subscriptionKeyBuffer.toString().split(/\n/).forEach(function(line){
     line = line.trim()
     if (line.startsWith("#")) {
@@ -21,6 +28,11 @@ subscriptionKeyBuffer.toString().split(/\n/).forEach(function(line){
     }
 });
 subscriptionKey = subscriptionKey.trim();
+
+if (subscriptionKey.length < 1) {
+    console.log("Microsoft Azure key is missing in file scripts/azurekey.txt");
+    process.exit()
+}
 
 // Make sure you copy the World region (You have specified the region when you created the translation resource). Using "global" means world wide service coverage
 const region = "global";
