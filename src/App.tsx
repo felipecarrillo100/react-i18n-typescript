@@ -8,6 +8,8 @@ class App extends React.Component<any, any>{
   static contextType = Context;
 
   render() {
+      const  intl  = this.context.intl;
+
       const languagesOptions = SupportedLanguages.map( taal => <option value={taal.name} title={taal.hint}>{taal.title}</option>)
     return (
         <div className="App">
@@ -40,6 +42,18 @@ class App extends React.Component<any, any>{
                       defaultMessage="Go to link"
                       description="Check website"/>
               </a>
+              <p title={ intl.formatMessage({
+                  id: "app.hoverexample.title",
+                  defaultMessage: "Hint:  you are hovering!",
+                  description:"This is an example on how to implement title"
+              }
+              )}>
+                  <FormattedMessage
+                  id="app.hoverexample.text"
+                  defaultMessage="Please hover on me!"
+                  description="This is an example on how to implement title"
+                  />
+              </p>
               <br/>
               <select value = {this.context.locale} onChange={this.context.selectLanguage}>
                   {languagesOptions}

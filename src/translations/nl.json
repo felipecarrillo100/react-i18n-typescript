@@ -1,5 +1,7 @@
 {
   "app.header": "Automatische vertaling",
+  "app.hoverexample.text": "Zweef alsjeblieft op me!",
+  "app.hoverexample.title": "Hint: je zweeft!",
   "app.info": "De vertalingen worden geautomatiseerd met Microsft Azure Translation Service",
   "app.link": "Naar link gaan",
   "app.text": "Welkom {user}"

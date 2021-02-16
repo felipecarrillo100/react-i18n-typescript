@@ -1,5 +1,7 @@
 {
   "app.header": "Traducción automática",
+  "app.hoverexample.text": "¡Por favor, flota sobre mí!",
+  "app.hoverexample.title": "Consejo: ¡estás flotando!",
   "app.info": "Las traducciones se automatizan con Microsft Azure Translation Service",
   "app.link": "Ir al enlace",
   "app.text": "Hola, bienvenido {user}"

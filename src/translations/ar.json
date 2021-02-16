@@ -1,5 +1,7 @@
 {
   "app.header": "الترجمة الآلية",
+  "app.hoverexample.text": "رجاءً تحوم عليّ!",
+  "app.hoverexample.title": "تلميح: أنت تحوم!",
   "app.info": "تتم ترجمة الآلي مع Microsft خدمة الترجمة Azure",
   "app.link": "الانتقال إلى الرابط",
   "app.text": "مرحباً، مرحباً {user}"

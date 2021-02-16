@@ -12,7 +12,7 @@ export const SupportedLanguages = [
     { name: "fr", title:"French", hint: "" },
     { name: "en", title:"English", hint: "" },
     { name: "ar", title:"Arabic", hint: "" },
-    { name: "sp", title:"Spanish", hint: "" },
+    { name: "es", title:"Spanish", hint: "" },
 ]
 
 const local = navigator.language;
